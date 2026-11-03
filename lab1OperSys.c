@@ -64,7 +64,6 @@ int main() {
     pthread_join(th_producer, NULL);
     pthread_join(th_consumer, NULL);
 
-    // Уничтожаем мьютекс и условную переменную (слайд 16)
     pthread_mutex_destroy(&my_mutex);
     pthread_cond_destroy(&my_cond);
 
